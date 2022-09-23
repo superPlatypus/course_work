@@ -4,154 +4,186 @@
     <meta charset="UTF-8">
     <title>my site</title>
     <link rel="shortcut icon" type="image/png" href="/images/favicon16.png">
+    <link rel="stylesheet" href="mySite.css">
+
 </head>
+
+
 <body>
-<h1 id="Title"> Компьютерные комплектующие </h1>
-<img src="/images/map.png" usemap="#shapes">
-<map name="shapes">
-    <area shape="rectangle" coords="0,0,100,150" href = "#Videocard">
-    <area shape="rectangle" coords="100,0,199,148" href = "#Processor">
-</map>
+<header>
+    <img class = "logo" src = "images/logo.png" width="200" height="200" alt = "logo">
+    <main class="main">
+        <h1 id="Title"> Компьютерные комплектующие </h1>
+    </main>
+
+    <nav class = "navigation">
+        <ul>
+            <li> <a href = "#Videocard">Видеокарта</a>
+            <li> <a href = "#Processor">Процессор</a>
+        </ul>
+    </nav>
+</header>
+
+
+<!--<img src="/images/map.png" usemap="#shapes">-->
+<!--<map name="shapes">-->
+<!--    <area shape="rectangle" coords="0,0,100,150" href = "#Videocard">-->
+<!--    <area shape="rectangle" coords="100,0,199,148" href = "#Processor">-->
+<!--</map>-->
+
+<aside>
+    <a>Coming soon</a>
+</aside>
 <ul>
     <li>
         <meta charset="UTF-8">
         <h2 id="Videocard"> Видеокарта </h2>
 
-        <ol type="1">
-            <li>
-                <h3>Palit GeForce RTX 3090 TI GameRock</h3>
-                <a href="https://www.dns-shop.ru/product/6babc3c55ef0ed20/videokarta-palit-geforce-rtx-3090-ti-gamerock-ned309t019sb-1022g/">Купить</a>
-                <br><br>
-                <b>Характеристики:</b>
-                <ul>
-                    <li>
-                        <dt>Штатная частота работы видеочипа</dt>
-                        <dd>1560 МГц</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Объем видеопамяти</dt>
-                        <dd>24 ГБ</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Разрядность шины памяти</dt>
-                        <dd>384 бит</dd>
-                    </li>
-                </ul>
-                <img src="images/palit3090ti.jpg" alt="image is not avaliable" width="200" height="200">
-            </li>
+        <section class = "videocards">
+            <ol type="1">
+                <li>
+                    <h3>Palit GeForce RTX 3090 TI GameRock</h3>
+                    <a href="https://www.dns-shop.ru/product/6babc3c55ef0ed20/videokarta-palit-geforce-rtx-3090-ti-gamerock-ned309t019sb-1022g/">Купить</a>
+                    <br><br>
+                    <b>Характеристики:</b>
+                    <ul>
+                        <li>
+                            <dt>Штатная частота работы видеочипа</dt>
+                            <dd>1560 МГц</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Объем видеопамяти</dt>
+                            <dd>24 ГБ</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Разрядность шины памяти</dt>
+                            <dd>384 бит</dd>
+                        </li>
+                    </ul>
+                    <img src="images/palit3090ti.jpg" alt="image is not avaliable" width="200" height="200">
+                </li>
 
-            <li>
-                <h3>MSI GeForce RTX 3060 VENTUS 2X OC</h3>
-                <a href="https://www.dns-shop.ru/product/55cc9b9165b71b80/videokarta-msi-geforce-rtx-3060-ventus-2x-oc-lhr-rtx-3060-ventus-2x-12g-oc/">Купить</a>
-                <br><br>
-                <b>Характеристики:</b>
-                <ul>
-                    <li>
-                        <dt>Штатная частота работы видеочипа</dt>
-                        <dd>1320 МГц</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Объем видеопамяти</dt>
-                        <dd>12 ГБ</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Разрядность шины памяти</dt>
-                        <dd>192 бит</dd>
-                    </li>
-                </ul>
-                <img src="images/msi3060.jpg" alt="image is not avaliable" width="200" height="200">
-            </li>
+                <li>
+                    <h3>MSI GeForce RTX 3060 VENTUS 2X OC</h3>
+                    <a href="https://www.dns-shop.ru/product/55cc9b9165b71b80/videokarta-msi-geforce-rtx-3060-ventus-2x-oc-lhr-rtx-3060-ventus-2x-12g-oc/">Купить</a>
+                    <br><br>
+                    <b>Характеристики:</b>
+                    <ul>
+                        <li>
+                            <dt>Штатная частота работы видеочипа</dt>
+                            <dd>1320 МГц</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Объем видеопамяти</dt>
+                            <dd>12 ГБ</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Разрядность шины памяти</dt>
+                            <dd>192 бит</dd>
+                        </li>
+                    </ul>
+                    <img src="images/msi3060.jpg" alt="image is not avaliable" width="200" height="200">
+                </li>
 
-        </ol>
+            </ol>
+        </section>
+
+
 
 
     </li>
 
     <li>
         <h2 id="Processor">Процессор</h2>
-        <ol type = "1">
-            <li>
-                <h3>Intel Core i9-12900K</h3>
-                <a href = "https://www.dns-shop.ru/product/9d2096fd1057ed20/processor-intel-core-i9-12900k-oem/">Купить</a>
-                <br><br>
-                <b>Харкатеристики:</b>
-                <ul>
-                    <li>
-                        <dt>Общее количество ядер</dt>
-                        <dd>16</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Максимальное количество потоков</dt>
-                        <dd>24</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Количество производительных ядер</dt>
-                        <dd>8</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Количество энергоэффективных ядер</dt>
-                        <dd>8</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Максимальная частота в турбо режиме </dt>
-                        <dd>5.2 ГГц</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Объём кэша L3 </dt>
-                        <dd>30 МБ</dd>
-                    </li>
-                    <br>
+        <section class = "processors">
+            <ol type = "1">
+                <li>
+                    <h3>Intel Core i9-12900K</h3>
+                    <a href = "https://www.dns-shop.ru/product/9d2096fd1057ed20/processor-intel-core-i9-12900k-oem/">Купить</a>
+                    <br><br>
+                    <b>Харкатеристики:</b>
+                    <ul>
+                        <li>
+                            <dt>Общее количество ядер</dt>
+                            <dd>16</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Максимальное количество потоков</dt>
+                            <dd>24</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Количество производительных ядер</dt>
+                            <dd>8</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Количество энергоэффективных ядер</dt>
+                            <dd>8</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Максимальная частота в турбо режиме </dt>
+                            <dd>5.2 ГГц</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Объём кэша L3 </dt>
+                            <dd>30 МБ</dd>
+                        </li>
+                        <br>
 
-                </ul>
-                <img src="images/i912900k.jpg" alt="image is not avaliable" width="200" height="200">
-            </li>
+                    </ul>
+                    <img src="images/i912900k.jpg" alt="image is not avaliable" width="200" height="200">
+                </li>
 
-            <li>
-                <h3>AMD Ryzen 5 5600X</h3>
-                <a href = "https://www.dns-shop.ru/product/3239ebce09e93332/processor-amd-ryzen-5-5600x-oem/">Купить</a>
-                <br><br>
-                <b>Харкатеристики:</b>
-                <ul>
-                    <li>
-                        <dt>Общее количество ядер</dt>
-                        <dd>8</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Общее количество потоков</dt>
-                        <dd>16</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Максимальная частота в турбо режиме </dt>
-                        <dd>4.6 ГГц</dd>
-                    </li>
-                    <br>
-                    <li>
-                        <dt>Объём кэша L3 </dt>
-                        <dd>32 МБ</dd>
-                    </li>
-                    <br>
+                <li>
+                    <h3>AMD Ryzen 5 5600X</h3>
+                    <a href = "https://www.dns-shop.ru/product/3239ebce09e93332/processor-amd-ryzen-5-5600x-oem/">Купить</a>
+                    <br><br>
+                    <b>Харкатеристики:</b>
+                    <ul>
+                        <li>
+                            <dt>Общее количество ядер</dt>
+                            <dd>8</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Общее количество потоков</dt>
+                            <dd>16</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Максимальная частота в турбо режиме </dt>
+                            <dd>4.6 ГГц</dd>
+                        </li>
+                        <br>
+                        <li>
+                            <dt>Объём кэша L3 </dt>
+                            <dd>32 МБ</dd>
+                        </li>
+                        <br>
 
-                </ul>
-                <img src="images/r55600x.jpg" alt="image is not avaliable" width="200" height="200">
-            </li>
-        </ol>
+                    </ul>
+                    <img src="images/r55600x.jpg" alt="image is not avaliable" width="200" height="200">
+                </li>
+            </ol>
+        </section>
+
     </li>
 </ul>
-<a href="tel:8-800-77-07-999">Связь с продавцом по телефону</a>
-<br>
-<a href="mailto:example@gmail.com">Связь с продавцом по email</a>
-<br>
+
+<footer>
+    <a href="tel:8-800-77-07-999">Связь с продавцом по телефону</a>
+    <br>
+    <a href="mailto:example@gmail.com">Связь с продавцом по email</a>
+    <br>
+</footer>
 
 </body>
 </html>

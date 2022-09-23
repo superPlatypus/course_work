@@ -1,0 +1,68 @@
+@import url('https://fonts.google.com/specimen/Roboto+Mono');
+footer {
+    /*display: flex;*/
+    /*display: block;*/
+    justify-content: center;
+    padding: 5px;
+    background-color: rgba(13,88,08, 0.7);
+    color: black;
+}
+
+aside{
+    float: right;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: green;
+    color: #fff;
+    border: 5px inset gray;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px darkgreen;
+
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    background:  rgba(13,88,08, 0.7);
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 6px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover {
+    background: darkslategray;
+}
+
+.videocards{
+    background-color: rgba(13,88,08, 0.7);
+    inline-size: fit-content;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px darkgreen;
+}
+
+
+.processors{
+    background-color: rgba(13,88,08, 0.7);
+    inline-size: fit-content;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px darkgreen;
+}
+
