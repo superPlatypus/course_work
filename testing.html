@@ -2,32 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>testing</title>
+    <title>Animated Login Form</title>
     <link rel="stylesheet" href="testing.css">
 </head>
 <body>
-
-    <div class="container">
-        <input type="checkbox" id="check">
-
-        <label for="check" class="menu_label">MENU</label>
-
-        <div class="logo_wrapper">
-            <img src="images/new/logo1.png" height="40" width="40">
+<div class="box">
+    <form autocomplete="off">
+        <h2>Sign in</h2>
+        <div class="inputBox">
+            <input type="text" required="required">
+            <span>Userame</span>
+            <i></i>
         </div>
-
-
-        <div class="burger-line first"></div>
-        <div class="burger-line second"></div>
-        <div class="burger-line third"></div>
-
-
-        <nav class="menu">
-            <a href="#" class="burger_link">Видеокарты</a>
-            <a href="#" class="burger_link">Процессоры</a>
-        </nav>
-
-    </div>
-
+        <div class="inputBox">
+            <input type="password" required="required">
+            <span>Password</span>
+            <i></i>
+        </div>
+        <div class="links">
+            <a href="#">Forgot Password ?</a>
+            <a href="#">Signup</a>
+        </div>
+        <input type="submit" value="Login">
+    </form>
+</div>
 </body>
 </html>
