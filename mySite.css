@@ -176,8 +176,8 @@ body {
     }
 
     .test {
-        height: 50px;
-        width: 60px;
+        height: 55px;
+        width: 55px;
         background-color: rgba(119, 119, 145, 0.2);
         border-radius: 10px;
         display: flex;
@@ -211,6 +211,7 @@ body {
         z-index: 2;
         top: 0;
         left: 0;
+        transition: 0.3s ease;
     }
 
     .menu_block {
@@ -220,8 +221,9 @@ body {
     }
 
     .burger-line {
+        /*position: absolute;*/
         display: flex;
-        width: 50px;
+        width: 40px;
         height: 4px;
         border-radius: 10px;
         background-color: #2196f3;
@@ -232,16 +234,19 @@ body {
 
     .first {
         transform-origin: 0% 0%;
+        /*top: 10px;*/
     }
 
     .second {
         transform-origin: 0% 0%;
+        /*top: 20px;*/
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
     .third {
         transform-origin: 0% 100%;
+        /*top: 30px;*/
     }
 
     .menu {
@@ -290,7 +295,7 @@ body {
         background-color: green;
     }
 
-    #check:checked ~ .test {
+    #check:checked ~ .menu_label {
         transform: rotate(90deg);
 
     }
@@ -300,9 +305,9 @@ body {
     }
 
 
-    #check:checked ~ .second {
-        display: none;
-    }
+    /*#check:checked ~ .burger-line {*/
+    /*    background-color: green;*/
+    /*}*/
 
 
 
