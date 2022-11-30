@@ -2,20 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/reg.css">
+    <link rel="stylesheet" href="mySite.css">
     <title>hz</title>
 
 </head>
-<body>
+<body class="login_body">
 
 <div class="wrapper">
-    <div class="register_block">
+    <div class="login_block">
         <div class="login_wrapper">
-            <a class="head"></a>
-            <input type="text" class="log" id="login">
-<!--            <label for="login" class="labl">Логин</label>-->
-            <input type="password" class="log" id="password">
-<!--            <label for="password" class="labl">Пароль</label>-->
+            <div class="head_wrapper">
+                <a class="head">Войти в аккаунт</a>
+
+            </div>
+
+            <div class="input_wrapper">
+
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Userame</span>
+                    <i></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" required="required">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+
+            </div>
+
+            <div class="button_wrapper">
+                <input type="submit" value="Login">
+            </div>
+
         </div>
 
 
