@@ -17,6 +17,17 @@ body {
     /*position: absolute;*/
     top: 0;
     left: 0;
+    /*position: absolute;*/
+
+}.header_for_login {
+    /*background-size: cover;*/
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    backdrop-filter: blur(8px);
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 .header_wrapper {
@@ -1136,11 +1147,12 @@ body {
 
 /*Video end*/
 
-.reg_page{
+.login_body{
     margin: 0;
     /*background-color: rgba(255,255,255,.5);*/
     /*background-color: red;*/
     background-color: #191B1F;
+    /*background-color: red;*/
 
 }
 
@@ -1153,7 +1165,7 @@ body {
     /*background-color: red;*/
     /*background-color: #191B1F;*/
     /*background-color: rgba(255,255,255,.5);*/
-    background-color: rgba(0, 0, 0, 0.2);
+    /*background-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .login_block {
