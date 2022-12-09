@@ -27,14 +27,14 @@ body {
     /*position: absolute;*/
     top: 0;
     left: 0;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 .header_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 100px;
 }
 
 .header_block {
@@ -45,6 +45,12 @@ body {
 .header_block:last-child {
     /*width: 15%;*/
     text-align: right;
+
+}
+
+
+
+.logo_block{
 
 }
 
@@ -161,6 +167,7 @@ body {
     .header_block {
         /*width: 50%;*/
         width: auto;
+        /*width: 25%;*/
     }
 
     .header_wrapper{
@@ -334,7 +341,7 @@ body {
     display: flex;
 }
 
-.intro_wrapper{
+.galery_wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -470,7 +477,13 @@ body {
 /*Social links end*/
 
 /*Intro start*/
+
 .intro{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.intro_wrapper{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -673,20 +686,23 @@ body {
 
 }
 /*Intro end*/
+
 .gap{
-    width: 100%;
-    height: 500px;
+    height: 200px;
 }
+
 /*Footer start*/
+
 .footer{
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    /*position: absolute;*/
 }
 
 .footer_matrix{
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 300px;
+    grid-template-rows: 275px;
     grid-template-areas:
             "company for_customers contacts";
     /*grid-gap: 10px;*/
@@ -831,33 +847,39 @@ body {
 .items{
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: 500px;
+    grid-template-rows: 425px 425px;
+
     grid-template-areas:
-            "st nd rd";
+            "st nd rd"
+            "_4th _5th _6th";
     grid-gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
-@media screen and (max-width: 840px){
+@media screen and (max-width: 1000px){
     .items{
         grid-template-columns: repeat(2, 45%);
-        grid-template-rows: 425px 425px;
+        grid-template-rows: 425px 425px 425px;
         grid-template-areas:
             "st nd"
-            "rd  4th";
+            "rd  _4th"
+            "_5th _6th";
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 550px){
     .items{
         grid-template-columns: repeat(1, 90%);
-        grid-template-rows: 425px 425px 425px;
+        grid-template-rows: repeat(6, 425px);
         grid-template-areas:
             "st"
             "nd"
-            "rd";
+            "rd"
+            "_4th"
+            "_5th"
+            "_6th";
     }
 }
 
@@ -873,6 +895,19 @@ body {
 .rd{
     grid-area: rd;
 }
+
+._4th{
+      grid-area: _4th;
+}
+
+._5th{
+      grid-area: _5th;
+}
+
+._6th{
+      grid-area: _6th;
+}
+
 
 .videocard{
     display:flex;
@@ -910,6 +945,18 @@ body {
 
 .rtx3090{
     background-image: url("/images/new/_3090.png");
+}
+
+.rtx2060{
+    background-image: url("/images/new/_2060.png");
+}
+
+.rtx2070{
+    background-image: url("/images/new/_2070.png");
+}
+
+.rtx2080{
+    background-image: url("/images/new/_2080.png");
 }
 
 .card_info_wrapper{
@@ -997,7 +1044,7 @@ body {
 }
 
 .videocard:hover .price_block{
-    width: 30%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
