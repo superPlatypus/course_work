@@ -1,9 +1,5 @@
 const cart = document.querySelector(".cart_wrapper")
-
-
-
 const cartStorage = JSON.parse(localStorage.getItem("cart") || "[]")
-
 if (cartStorage.length){
     cartStorage.forEach(el =>{
         const {title, price, img} = el
@@ -20,10 +16,8 @@ if (cartStorage.length){
                 </div>`
         newcard.className = "cart_row"
         newcard.children[0].style.backgroundImage = img
-        // console.log(newcard)
         cart.appendChild(newcard)
     })
-
     const cards = document.querySelectorAll(".cart_row")
     cards.forEach((el,idx) => {
         const btn = el.childNodes[6].childNodes[1]
@@ -31,25 +25,11 @@ if (cartStorage.length){
         btn.addEventListener("click", ()=> {
             var items = JSON.parse(localStorage.getItem("cart"))
             var i = 0
-            // JSON.parse(localStorage.getItem("cart")).forEach( (item) => {
-            //     // console.log(item)
-            //     if (item['title'] == title){
-            //         // localStorage.setItem("cart", JSON.stringify(([...cart, card])))
-            //         items.splice(i,1)
-            //         i--
-            //         console.log(items)
-            //
-            //     }
-            //     i++;
-            // })
-
             JSON.parse(localStorage.getItem("cart")).every( (item) => {
                 if (item['title'] == title) {
                     items.splice(i,1)
-                    // i--
                     console.log(items)
                     return false;
-                    i++
                 } else {
                     i++
                     return true;
@@ -59,10 +39,7 @@ if (cartStorage.length){
             localStorage.setItem("cart", JSON.stringify(([...items])))
             location.reload();
         })
-
-
     })
-    // console.log(JSON.parse(localStorage.getItem("cart")))
 }
 else{
     const newcard = document.createElement("div")
