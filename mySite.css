@@ -580,7 +580,8 @@ body {
 @media screen and (max-width: 480px){
     .matrix{
         grid-template-columns: 90%;
-        grid-template-rows: 200px 400px 200px 400px 200px 400px 200px;
+        /*grid-template-rows: 200px 400px 200px 400px 200px 400px 200px;*/
+        grid-template-rows: 200px auto 200px auto 200px auto 200px;
         grid-template-areas:
             "wide_text1"
             "tall_img1"
